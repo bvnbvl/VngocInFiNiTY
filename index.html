@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,10 +74,10 @@
         <img src="qr-vietinbank.jpeg" width="100%" alt="QR Code">
     </div>
 
-    <button class="button" onclick="showOptions('aimdata 🌟💫')">aimdata 🌟💫</button>
-    <button class="button" onclick="showOptions('trickshotm1887 🔫')">trickshotm1887 🔫</button>
-    <button class="button" onclick="showOptions('trickshotump 🫦')">trickshotump 🫦</button>
-    <button class="button" onclick="showOptions('facepanel 🚫')">facepanel 🚫</button>
+    <button class="button" onclick="showOptions('aimdata')">aimdata 🌟💫</button>
+    <button class="button" onclick="showOptions('trickshotm1887')">trickshotm1887 🔫</button>
+    <button class="button" onclick="showOptions('trickshotump')">trickshotump 🫦</button>
+    <button class="button" onclick="showOptions('facepanel')">facepanel 🚫</button>
 
     <div id="optionDialog" class="dialog">
         <p id="selectedOption">Chọn game:</p>
@@ -87,16 +86,19 @@
     </div>
 
     <script>
+        let currentOption = "";
+
         function showOptions(optionName) {
+            currentOption = optionName;
             document.getElementById('selectedOption').textContent = 'Chọn game cho: ' + optionName;
             document.getElementById('optionDialog').style.display = 'block';
         }
 
         function redirectTo(game) {
             if (game === 'ff') {
-                window.location.href = 'https://example.com/ff';
+                window.location.href = "https://drive.google.com/freefire.com";
             } else {
-                window.location.href = 'https://example.com/ffmax';
+                window.location.href = "https://drive.google.com/freefiremax.com";
             }
         }
     </script>
